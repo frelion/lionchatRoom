@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="client/css/chatroom.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="client/js/simplepeer.min.js" rel="javascriptsheet" type="text/javascript"></script>
+    <script src="client/js/chatroom.js" rel="javascriptsheet" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexBox">
+        <div>
+            <video id="video" muted>
+
+            </video>
+        </div>
+        <div>
+            <div id="talk-window" class="talk-window">
+                <div class="tw-title">
+                    {{.roomname}}
+                    <span class="close-tw-window">×</span>
+                </div>
+                <div class="tw-content">
+                    <div class="talk-list-div">
+                        
+                        <a href="javascript:;" id="bottom-link"></a>
+                    </div>
+                    <div class="talk-operate-div">
+                        <div class="talk-operate-btn-list">
+                            可添加emoji表情等附加功能按钮
+                        </div>
+                        <div class="talk-operate-textarea">
+                            <textarea id="msg-text"></textarea>
+                        </div>
+                        <div class="send-btn">
+                            <span id="sendButton">发 送</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="play">开始直播</p> 
+</body>
+</html>
